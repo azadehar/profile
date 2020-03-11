@@ -1,20 +1,24 @@
 body {
-  font-family: Times, serif;
+  font-family: lato, serif;
   font-weight: 300;
    /* if you want the light version */
    color: rgb(10, 10, 0);
    background-color: #ece0e7;
 }
 
+
 h1 {
   color: gray;
-  font-family: arial;
+  font-family: lato;
+  color: gray;
+
 }
 
 h2 {
-  color: #553246;
+  color: #EC7263;
   font-size: 20px;
-  font-family: arial;
+  font-family: lato;
+
 }
 
 .img-circle {
@@ -57,7 +61,7 @@ h2 {
 }
 
 .container {
-  width: 500px;
+  width: 2000px;
   margin: 0 auto;
 
 }
@@ -95,30 +99,24 @@ a:hover {
   line-height: 30px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 20px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 20px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 20px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
   }
 }
-
-
-
-
-
-
 
 
 
