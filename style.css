@@ -8,16 +8,62 @@ body {
 
 
 h1 {
-  color: gray;
   font-family: lato;
   color: gray;
+  font-size: 1.6em;
+  font-weight: 700;
 
 }
 
 h2 {
   color: #EC7263;
   font-size: 20px;
-  font-family: lato;
+  font-family: sans-serif;
+  font-weight: inherit;
+
+}
+
+p {
+  font-family: 'Open Sans', Arial;
+  font-size: 12px;
+}
+
+ul{
+  list-style-type: none;
+  margin-left: none;
+  padding: 0;
+  font-family: 'Open Sans', Arial;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2F4F4F;
+
+}
+
+/*.card{
+    display: flex;
+    background-color: #f3f3f3;
+    justify-content: left;
+    align-content: left;
+    overflow: hidden;
+    margin: 10px 0;
+    font-weight: 700;
+  }*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
 
 }
 
@@ -36,6 +82,8 @@ h2 {
 
 .icon {
   width: 40px;
+  color: gray;
+  text-decoration-color: none;
 }
 
 
@@ -70,15 +118,19 @@ h2 {
 .list-inline > li {
   display: inline-block;
   padding: 0px 20px;
+  font-family: 'Open Sans', Arial;
+
 }
 
 a {
-  color: blue;
+  color: #2F4F4F;
   text-decoration: none;
+
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: black;
 }
 
 .boxed {
@@ -97,6 +149,23 @@ a:hover {
 
   font-size: 24px;
   line-height: 30px;
+}
+
+.contact-box{
+  box-sizing: border-box;
+  display: block;
+
+}
+
+.contact-item{
+  padding: 10px;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  margin-right: 0px;\
+
+}
+.contact-item-icon{
+  opacity: 0.2;
 }
 
 @media (max-width: 20px) {
