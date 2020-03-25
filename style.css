@@ -1,6 +1,84 @@
+@page{
+  size: letter portrait;
+  margin: 0;
+}
+
+body {
+  font-family: lato, serif;
+  font-weight: 300;
+   /* if you want the light version */
+   color: rgb(10, 10, 0);
+   background-color: #f2f2f2;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --page-width: 9in;
+  --page-height: 11in;
+  --main-width: 6.4in;
+  --sidebar-width: calc(var(--page-width) - var(--main-width));
+  --decorator-horizontal-margin: 0.2in;
+
+  --sidebar-horizontal-padding: 0.2in;
+
+  /* XXX: using px for very good precision control */
+  --decorator-outer-offset-top: 10px;
+  --decorator-outer-offset-left: -5.5px;
+  --decorator-border-width: 1px;
+  --decorator-outer-dim: 9px;
+  --decorator-border: 1px solid #ccc;
+
+  --row-blocks-padding-top: 5pt;
+  --date-block-width: 0.6in;
+
+  --main-blocks-title-icon-offset-left: -19pt;
+}
+
+.container {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background: #fff;
+  width: 900px;
+  padding-right: 1px;
+  padding-left: 1px;
+  margin-right: 40px;
+  margin-left: 30px;
+  box-sizing: border-box;
+
+}
+
+li{
+  list-style-type: none;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #996680;
+    font-size: 24px;
+    font-weight: 100px;
+    text-transform: uppercase;
+    line-height: 0.5;
+    }
+
+h2 {
+  font-weight: 400;
+  font-size: 18pt;
+  color: #A75265;
+  font-family: lato, serif;
+}
 
 
-
+h3 {
+  font-size: 2em;
+  padding: 0;
+  font-weight: 700;
+  font-family: lato, serif;
+  line-height:0;
+  color: black;
+}
 
 
 ul{
@@ -9,44 +87,42 @@ ul{
   padding: 0;
   font-family: 'Open Sans', Arial;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 50;
   color: #2F4F4F;
 
 }
 
-ol{
-  list-style-type: none;
-  margin-left: none;
-  padding: 0;
-  font-family: 'Open Sans', Arial, Tahoma;
-  font-size: 12px;
-  color: black;
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  border: white 3px solid;
+  box-sizing: border-box;
+  margin-left:2px;
 
 }
 
-/*.card{
-    display: flex;
-    background-color: #f3f3f3;
-    justify-content: left;
-    align-content: left;
-    overflow: hidden;
-    margin: 10px 0;
-    font-weight: 700;
-  }*/
 
-  * {
-    box-sizing: border-box;
-  }
+#title {
+  font-family: Andale Mono, monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 1.0em;
+  justify-content: center;
+  color: #669999;
+}
 
-  .row {
-    display: flex;
-  }
 
   /* Create two equal columns that sits next to each other */
   .column {
     flex: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    padding: 0px;
+    height: 100px; /* Should be removed. Only for demonstration */
   }
 
 
@@ -61,51 +137,6 @@ ol{
   width: 150px;
 }
 
-.shadowed {
-  box-shadow: 5px 5px 3px gray;
-}
-
-.icon {
-  width: 40px;
-  color: gray;
-  text-decoration-color: none;
-}
-
-
-#home-page-first-image {
-  border-radius: 50%;
-}
-.home-card {
-  text-align: center;
-  background: #f3f3f3;
-  padding: 30px;
-  border: 1px solid lightgrey;
-  box-shadow: 5px 5px 3px gray;
-}
-
-
-.text-center {
-  text-align: center;
-}
-.card-white {
-  background: white;
-  padding: 30px;
-  border: 1px solid lightgrey;
-}
-
-.container {
-  width: 2000px;
-  margin: 0 auto;
-
-}
-
-
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-  font-family: 'Open Sans', Arial;
-
-}
 
 a {
   color: #669999;
@@ -144,122 +175,19 @@ a:hover {
 
 }
 .contact-item-icon{
-  opacity: 0.2;
+  color: gray;
+  opacity: 0.3;
+  margin-right: 1em;
+
 }
 
 
-.card-education{
-background: #eee;
-margin-bottom: 10px;
-position: relative;
-padding: 10px 10px 0 10px;
-border-bottom: 1px solid #ddd;
-box-sizing: border-box;
-font-family: 'Open Sans', Arial, Tahoma;
-font-weight: 400;
-font-size: 1em;
-color: #363636;
-}
-
-@media (max-width: 20px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 20px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 20px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@page{
-  size: letter portrait;
-  margin: 0;
-}
-
-
-body {
-  font-family: lato, serif;
-  font-weight: 300;
-   /* if you want the light version */
-   color: rgb(10, 10, 0);
-   background-color: #ece0e7;
-}
-
-*{
-  box-sizing: border-box;
-}
-
-:root{
-  --page-width: 8.5in;
-  --page-height: 11in;
-  --main-width: 6.4in;
-  --sidebar-width: calc(var(--page-width) - var(--main-width));
-  --decorator-horizontal-margin: 0.2in;
-
-  --sidebar-horizontal-padding: 0.2in;
-
-  /* XXX: using px for very good precision control */
-  --decorator-outer-offset-top: 10px;
-  --decorator-outer-offset-left: -5.5px;
-  --decorator-border-width: 1px;
-  --decorator-outer-dim: 9px;
-  --decorator-border: 1px solid #ccc;
-
-  --row-blocks-padding-top: 5pt;
-  --date-block-width: 0.6in;
-
-  --main-blocks-title-icon-offset-left: -19pt;
-}
-
-
-
-
-li{
-  list-style-type: none;
-}
 
 #main{
   float: left;
   width: var(--main-width);
-  padding: 0.25in 0.25in 0 0.25in;
+  padding: 0.01in 0.01in 0 0.01in;
   font-size: 7pt;
-}
-
-#sidebar{
-  float: right;
-  position: relative; /* for disclaimer */
-  width: var(--sidebar-width);
-  height: 100%;
-  padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #f2f2f2;
-  font-size: 8.5pt;
 }
 
 
@@ -268,7 +196,20 @@ li{
   left: 0.55in;
   margin-bottom: 0.3in;
   line-height: 1.2;
+
 }
+
+.text-center h1{
+  text-align:center;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size: 2.5em;
+  font-weight: 50;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 1.0em;
+
+}
+
 
 #title h1{
   font-weight: 300;
@@ -289,16 +230,24 @@ li{
 
 .main-block{
   margin-top: 0.1in;
+  background-color: white;
+  margin-left: 35px;
+  margin-top: 14px;
+  width: 8.6in;
+  padding-top: 10px;
+  padding-left: 20px;
+  box-shadow: 4px 4px 1px #888888;
+
 }
 
 #main h2{
   position: relative;
   top: var(--row-blocks-padding-top);
-  /* XXX: 0.5px for aligning fx printing */
   left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
-  font-weight: 400;
+  font-weight: 700;
   font-size: 11pt;
-  color: #555;
+  color: #A75265;
+  font-family: lato, serif;
 }
 
 #main h2 > i{
@@ -311,19 +260,7 @@ li{
   color: #444;
 }
 
-#main h2::after{ /* extends the decorator line */
-  height: calc(var(--row-blocks-padding-top) * 2);
-  position: relative;
-  top: calc(-1 * var(--row-blocks-padding-top));
-  /* XXX: 0.5px for aligning fx printing */
-  left: calc(-1 * var(--decorator-horizontal-margin));
-  display: block;
-  border-left: var(--decorator-border);
-  z-index: 0;
-  line-height: 0;
-  font-size: 0;
-  content: ' ';
-}
+
 
 /**** minor tweaks on the icon fonts ****/
 #main h2 > .fa-graduation-cap{
@@ -447,9 +384,11 @@ li{
   padding: 0.05in 0 0.07in 0;
 }
 
-.details .place{
+.place{
   float: left;
-  font-size: 7.5pt;
+  font-size: 9pt;
+  margin-bottom: 10px;
+  color: #996680;
 }
 
 .details .location{
@@ -480,7 +419,7 @@ li{
 }
 
 #main li{
-  margin: 0 0 0.025in 0;
+  margin: 0 0 0.20in 0;
 }
 
 /****** customize list symbol style ******/
@@ -509,13 +448,32 @@ li{
 
 /* sidebar */
 
-#sidebar h1{
+#sidebar{
+  float: right;
+  position: relative; /* for disclaimer */
+  height: 100%;
+  padding: 0.2in var(--sidebar-horizontal-padding);
+  background-color: white;
+  font-size: 8.5pt;
+  margin-top: 14.5px;
+  margin-right:50px;
+/*  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+*/  box-shadow: 4px 4px 1px #888888;
+
+
+
+}
+
+#sidebar h2{
   font-weight: 400;
   font-size: 11pt;
+  color: #A75265;
 }
 
 .side-block{
-  margin-top: 0.5in;
+  margin-top: 0;
+*/height: 150px;
+
 }
 
 #contact ul{
@@ -524,6 +482,7 @@ li{
   font-family: "Source Code Pro";
   font-weight: 400;
   line-height: 1.75;
+  background-color: white;
 }
 
 #contact li > i{
@@ -535,13 +494,46 @@ li{
   line-height: 1.5;
 }
 
-#skills ul{
-  margin: 0.05in 0 0.15in;
-  padding: 0;
+
+.item-skills {
+    height: 20px;
+    background: #669999;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-sizing: border-box;
+    line-height: 1;
+  }
+
+#languages li{
+  font-family: "Source Code Pro"
+  font-weight: 400;
 }
 
+.interest {
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 5px;
+  background: #A75265;
+  position: relative;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  line-height: 1;
+}
 
-
-
+.contact-item-icon-interest{
+  color: white;
+  padding-right: 7px;
+}
 
 
