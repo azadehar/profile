@@ -1,2 +1,2 @@
 # profile
-This is a personal website
+This is my personal website
